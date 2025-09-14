@@ -48,6 +48,11 @@ body {
     margin: 20px;
 }
 
+body, a {
+  font-family: "Arial", sans-serif; /* remplacez par votre police */
+}
+
+
 /* Pour les écrans de 768px ou moins (tablettes et mobiles) */
 @media (max-width: 768px) {
   body {
@@ -81,4 +86,5 @@ footer {
   opacity: 1;                   /* Deviens visible */
   transform: translateY(0);     /* Revient à sa position normale */
 }
+
 
