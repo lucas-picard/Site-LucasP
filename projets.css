@@ -6,6 +6,10 @@ body {
     background: linear-gradient(to top, #0e2c0e, #3e8e41); /* Dégradé vert */
 }
 
+body, a {
+  font-family: "Arial", sans-serif; /* remplacez par votre police */
+}
+
 /* --------------------- */
 /* TITRE PRINCIPAL       */
 /* --------------------- */
@@ -200,3 +204,4 @@ img {
         transform: translateY(0);
     }
 }
+
