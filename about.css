@@ -9,6 +9,12 @@ body {
 body, a {
   font-family: "Arial", sans-serif; /* remplacez par votre police */
 }
+
+@media (max-width: 768px) {
+  nav { flex-direction: column; }
+  .card { max-width: 100%; }
+}
+
   
 /* --------------------- */
 /* TITRES H1             */
@@ -210,4 +216,5 @@ section:hover {
 .card:hover {
   transform: scale(1.05); /* Zoom au survol */
 }
+
 
