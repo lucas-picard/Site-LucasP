@@ -18,6 +18,10 @@ body {
   line-height: 1.6; /* Améliore la lisibilité du texte */
 }
 
+body, a {
+  font-family: "Arial", sans-serif; /* remplacez par votre police */
+}
+
 /* --------------------- */
 /* HEADER                */
 /* --------------------- */
@@ -227,3 +231,4 @@ footer {
   margin-top: 50px;             /* Espace au-dessus */
   border-top: 2px solid #7b5cff; /* Ligne violette */
 }
+
