@@ -1,0 +1,73 @@
+/* --- Conteneur principal : centre les éléments verticalement --- */
+.container {
+    display: flex;              /* Utilise Flexbox */
+    flex-direction: column;     /* Place les éléments en colonne */
+    align-items: center;        /* Centre horizontalement */
+}
+
+/* --- Style du titre principal h1 --- */
+h1 {
+    font-size: 5em;             /* Très grande taille de police */
+    color: white;               /* Texte en blanc */
+    text-shadow: white 0 0 10px;/* Halo lumineux autour du texte */
+    text-align: center;         /* Centré horizontalement */
+}
+
+/* --- Style des boutons --- */
+.btn {
+    font-size: 2em;             /* Texte assez grand */
+    padding: 0.5em 1em;         /* Espacement interne */
+    margin-top: 1em;            /* Espace au-dessus de chaque bouton */
+    cursor: pointer;            /* Curseur main au survol */
+    background-color: black;    /* Fond noir */
+    color: #111111;             /* Texte gris très foncé */
+    border-radius: 5px;         /* Coins légèrement arrondis */
+    list-style-type: none;      /* Supprime les puces si utilisé dans une liste */
+}
+
+/* --- Style des liens contenus dans les boutons --- */
+a {
+    text-decoration: none;      /* Supprime le soulignement */
+    color: white;               /* Texte blanc */
+    font-family: Satisfy, cursive; /* Police manuscrite élégante */
+}
+
+/* --- Effet au survol des boutons --- */
+.btn:hover {
+    background-color: #333;     /* Fond gris foncé */
+    color: white;               /* Texte blanc */
+    box-shadow: 0 0 10px white; /* Ombre lumineuse autour du bouton */
+    text-shadow: whitesmoke 0 0 10px; /* Halo lumineux sur le texte */
+}
+
+/* --- Fond global de la page --- */
+body {
+    font-family: Arial, sans-serif; /* Police par défaut */
+    background: linear-gradient(to right, #000000, #434343); /* Dégradé noir vers gris */
+}
+
+/* --- Style du pied de page --- */
+footer {
+    position: fixed;            /* Fixé en bas de la page */
+    bottom: 0;
+    width: 100%;                /* Prend toute la largeur */
+    background-color: #222;     /* Fond gris foncé */
+    color: white;               /* Texte blanc */
+    text-align: center;         /* Texte centré */
+    padding: 1em ;              /* Espacement interne */
+    font-size: 0.9em;           /* Taille de police réduite */
+    margin-left: -8px;          /* Décalage pour compenser les marges globales */
+}
+
+/* --- Animation fade-in (apparition progressive) --- */
+.fade-in {
+  opacity: 0;                   /* Commence invisible */
+  transform: translateY(20px);  /* Décalé vers le bas */
+  transition: opacity 1.2s ease, transform 1.2s ease; /* Animation fluide */
+}
+
+/* --- Quand la classe "show" est ajoutée, l'élément devient visible --- */
+.fade-in.show {
+  opacity: 1;                   /* Deviens visible */
+  transform: translateY(0);     /* Revient à sa position normale */
+}

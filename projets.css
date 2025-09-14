@@ -1,0 +1,202 @@
+/* --------------------- */
+/* STYLE GLOBAL          */
+/* --------------------- */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to top, #0e2c0e, #3e8e41); /* Dégradé vert */
+}
+
+/* --------------------- */
+/* TITRE PRINCIPAL       */
+/* --------------------- */
+h1 {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: white 0 0 10px; /* Effet lumineux */
+    text-align: center;
+}
+
+/* --------------------- */
+/* HEADER                */
+/* --------------------- */
+header {
+    display: flex;
+    justify-content: space-between; /* Espace entre le titre et le menu */
+    align-items: center;            /* Aligne verticalement */
+    padding: 10px 20px;
+    margin: -8px; /* Supprime la marge par défaut du body */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #434343); /* Dégradé sombre */
+}
+
+/* --------------------- */
+/* NAVIGATION            */
+/* --------------------- */
+nav ul {
+    display: flex; /* Place les éléments du menu en ligne */
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    font-family: Satisfy, cursive; /* Police décorative */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: lightgray;
+    text-shadow: whitesmoke 0 0 10px;
+}
+
+/* --------------------- */
+/* INTRODUCTION PROJETS  */
+/* --------------------- */
+.introt_projets {
+    background: rgba(255, 255, 255, 0.9); /* Fond clair semi-transparent */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px 30px;
+    margin: 50px auto;
+    max-width: 900px;
+    text-align: center;
+    animation: fadeIn 1s ease-out; /* Animation d’apparition */
+}
+
+.introt_projets h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #1f3d1f;
+    position: relative;
+    display: inline-block;
+}
+
+/* Soulignement animé du titre */
+.introt_projets h2::after {
+    content: "";
+    display: block;
+    width: 60%;
+    height: 4px;
+    margin: 8px auto 0;
+    background: linear-gradient(to right, #2e7d32, #66bb6a);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(50, 200, 100, 0.6);
+}
+
+.introt_projets p {
+    font-size: 1.15em;
+    line-height: 1.8em;
+    color: #333;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+/* --------------------- */
+/* CONTENEUR PROJETS     */
+/* --------------------- */
+.contener_all_projets {
+    display: flex;
+    flex-wrap: wrap;        /* Passe à la ligne si manque d’espace */
+    justify-content: center; /* Centre horizontalement */
+    gap: 20px;              /* Espacement entre projets */
+    padding: 20px;
+    background: linear-gradient(to top, #abc4c4, #c0d4d2);
+    border-radius: 10px;
+    box-shadow: white 0 0 7px;
+    margin: 20px auto;      /* Centré */
+    max-width: 1200px;      /* Largeur maximale */
+    text-align: center;
+    margin-bottom: 150px;   /* Évite que le footer chevauche */
+}
+
+/* --------------------- */
+/* STYLE DES PROJETS     */
+/* --------------------- */
+.projet1, .projet2, .projet3 {
+    background-color: rgba(255, 255, 255, 0.8); /* Fond blanc semi-transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px; /* Taille fixe */
+    text-align: center;
+    font-size: large;
+}
+
+/* Effet hover sur les projets */
+.projet1:hover, .projet2:hover, .projet3:hover {
+    box-shadow: black 0 0 15px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* --------------------- */
+/* FOOTER                */
+/* --------------------- */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222; /* Fond sombre */
+    color: white;
+    text-align: center;
+    padding: 1em ;
+    font-size: 0.9em;
+    margin-left: -8px;
+}
+
+/* --------------------- */
+/* IMAGES                */
+/* --------------------- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* --------------------- */
+/* LIENS DANS PROJETS    */
+/* --------------------- */
+.projet1 a, .projet2 a, .projet3 a {
+    margin-bottom: 10px;
+    color: #333;
+    background: linear-gradient(to top, #abc4c4, #c0d4d2);
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: white 0 0 5px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.projet1 a:hover, .projet2 a:hover, .projet3 a:hover {
+    text-shadow: white 0 0 10px;
+    color: white;
+    background: linear-gradient(to top, #0e2c0e, #3e8e41);
+    box-shadow: black 0 0 10px;
+}
+
+/* --------------------- */
+/* ANIMATION FADE-IN     */
+/* --------------------- */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

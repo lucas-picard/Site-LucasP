@@ -1,0 +1,253 @@
+/* --------------------- */
+/* RESET (mise à zéro)   */
+/* --------------------- */
+* {
+  margin: 0;              /* Supprime les marges par défaut */
+  padding: 0;             /* Supprime les espacements internes par défaut */
+  box-sizing: border-box; /* Inclut padding et bordure dans la taille */
+}
+
+/* --------------------- */
+/* BODY                  */
+/* --------------------- */
+body {
+  min-height: 100vh; /* Hauteur minimale = toute la fenêtre */
+  background: radial-gradient(circle, #ffffff 0%, #0e2c0e 100%); /* Dégradé radial vert/blanc */
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police principale */
+  color: #222;       /* Couleur de texte par défaut */
+  line-height: 1.6;  /* Meilleure lisibilité */
+}
+
+/* Effet de voile sombre par-dessus le fond */
+body::before {
+  content: "";
+  position: fixed;            /* Reste fixe même en scrollant */
+  inset: 0;                   /* Occupe tout l'écran */
+  background: rgba(0,0,0,0.6);/* Voile noir semi-transparent */
+  z-index: -1;                /* Placé derrière le contenu */
+}
+
+/* --------------------- */
+/* HEADER                */
+/* --------------------- */
+header {
+  display: flex;                 /* Alignement en ligne */
+  justify-content: space-between;/* Titre à gauche, menu à droite */
+  align-items: center;           /* Centre verticalement */
+  padding: 15px 40px;            /* Espacement interne */
+  background: rgba(0,0,0,0.7);   /* Fond sombre */
+  border-bottom: 2px solid #66bb6a; /* Ligne verte */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3); /* Ombre portée */
+}
+
+header h1 {
+  font-size: 2.2em;             /* Taille du titre */
+  color: white;                 /* Couleur blanche */
+  text-shadow: 0 0 15px #66bb6a;/* Effet lumineux vert */
+}
+
+nav ul {
+  display: flex; /* Menu en ligne */
+  gap: 25px;     /* Espacement entre les éléments */
+}
+
+.btn {
+  list-style-type: none; /* Supprime les puces */
+}
+
+nav a {
+  color: white;                       /* Texte blanc */
+  font-family: 'Satisfy', cursive;    /* Police décorative */
+  font-size: 1.1em;                   /* Taille du texte */
+  text-decoration: none;              /* Pas de soulignement */
+  transition: all 0.3s ease;          /* Animation fluide */
+}
+
+nav a:hover {
+  color: #aaffaa;                     /* Texte vert clair */
+  text-shadow: 0 0 10px white;        /* Effet lumineux blanc */
+}
+
+/* --------------------- */
+/* INTRO                 */
+/* --------------------- */
+.intro_projet {
+  background: rgba(255, 255, 255, 0.95); /* Fond blanc translucide */
+  border-radius: 16px;                   /* Coins arrondis */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25); /* Ombre douce */
+  padding: 40px;                         /* Espacement interne */
+  margin: 40px auto;                     /* Centré avec espace vertical */
+  max-width: 900px;                      /* Largeur max */
+  text-align: center;                    /* Texte centré */
+  animation: fadeUp 1s ease;             /* Apparition animée */
+}
+
+.intro_projet h2 {
+  font-size: 2em;         /* Taille sous-titre */
+  margin-bottom: 20px;    /* Espacement bas */
+  color: #1f3d1f;         /* Vert foncé */
+}
+
+/* --------------------- */
+/* GRID : cartes infos   */
+/* --------------------- */
+.grid {
+  display: grid;                                /* Grille */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes responsives */
+  gap: 20px;                                    /* Espacement */
+  max-width: 1200px;                            /* Largeur max */
+  margin: 0 auto 50px auto;                     /* Centré + espace bas */
+  padding: 20px;                                /* Espacement interne */
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);        /* Fond blanc translucide */
+  border-radius: 16px;                          /* Coins arrondis */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);      /* Ombre */
+  padding: 25px;                                /* Espacement interne */
+  transition: transform 0.3s, box-shadow 0.3s;  /* Animations */
+}
+
+.card:hover {
+  transform: translateY(-5px);                  /* Léger effet de levée */
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);       /* Ombre renforcée */
+}
+
+.card h3 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+  color: #1f3d1f; /* Vert foncé */
+}
+
+/* --------------------- */
+/* SECTION IMAGES        */
+/* --------------------- */
+.development {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.development h2 {
+  font-size: 2em;
+  margin-bottom: 25px;
+  color: white;
+  text-shadow: 0 0 12px #66bb6a; /* Effet lumineux vert */
+}
+
+/* ✅ corrige le sélecteur mal écrit : h3 affectait tout le site */
+.development .apercu, 
+.development h3 {
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #ddd;
+  text-shadow: #bbb 0 0 2px;
+}
+
+.images {
+  display: grid;                                /* Grille */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colonnes responsives */
+  gap: 20px;                                    /* Espacement */
+  max-width: 1100px;                            /* Largeur max */
+  margin: auto;                                 /* Centré */
+}
+
+.img-card {
+  background: white;                            /* Fond blanc */
+  border-radius: 12px;                          /* Coins arrondis */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);      /* Ombre */
+  padding: 10px;                                /* Espacement interne */
+  overflow: hidden;                             /* Cache dépassement */
+  transition: transform 0.3s ease;              /* Animation */
+}
+
+.img-card:hover {
+  transform: scale(1.05); /* Zoom au survol */
+}
+
+.img-card img {
+  width: 100%;            /* Image responsive */
+  height: 220px;          /* Même hauteur pour toutes */
+  object-fit: cover;      /* Coupe sans déformer */
+  border-radius: 8px;     /* Coins arrondis */
+  display: block;         /* Évite espaces parasites */
+}
+
+/* --------------------- */
+/* SECTION PLUS          */
+/* --------------------- */
+.plus {
+  text-align: center;
+  margin: 40px auto;
+  background: rgba(255,255,255,0.95); /* Fond blanc translucide */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  max-width: 900px;
+}
+
+/* --------------------- */
+/* BOUTONS NAVIGATION    */
+/* --------------------- */
+.next-project {
+  position: fixed;             /* Fixe à l'écran */
+  bottom: 20px; right: 20px;   /* En bas à droite */
+  padding: 12px 22px;
+  background: #66bb6a;         /* Vert */
+  color: white;
+  border-radius: 30px;         /* Bouton arrondi */
+  text-decoration: none;       /* Pas de soulignement */
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25); /* Ombre */
+  transition: all 0.3s ease;
+}
+
+.next-project:hover {
+  background: #4CAF50;  /* Vert foncé */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  transform: translateY(-3px); /* Effet de levée */
+}
+
+/* Boutons documentation et jouer */
+.btn-doc, .btn-play {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #2e8532;         /* Vert foncé */
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  text-shadow: white 0 0 2px;  /* Légère lueur */
+}
+
+.btn-doc:hover, .btn-play:hover {
+  background: #4CAF50;  /* Vert plus clair */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  transform: translateY(-3px);
+}
+
+/* --------------------- */
+/* FOOTER                */
+/* --------------------- */
+footer {
+  background: rgba(0,0,0,0.85); /* Fond sombre */
+  color: #bbb;                  /* Texte gris clair */
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;             /* Espace au-dessus */
+  font-size: 0.95em;            /* Taille texte réduite */
+  border-top: 2px solid #66bb6a;/* Ligne verte */
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.3); /* Ombre haut */
+}
+
+/* --------------------- */
+/* ANIMATIONS            */
+/* --------------------- */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); } /* Départ : bas + invisible */
+  to   { opacity: 1; transform: translateY(0); }    /* Arrivée : visible en place */
+}

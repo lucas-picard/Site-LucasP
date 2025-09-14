@@ -1,0 +1,229 @@
+/* --------------------- */
+/* RESET GLOBAL          */
+/* --------------------- */
+* { 
+  margin: 0;            /* Supprime toutes les marges par défaut */
+  padding: 0;           /* Supprime tous les paddings par défaut */
+  box-sizing: border-box; /* Inclut les bordures et paddings dans la largeur/hauteur */
+}
+
+/* --------------------- */
+/* BODY                  */
+/* --------------------- */
+body {
+  min-height: 100vh; /* Le corps occupe au moins toute la hauteur de l'écran */
+  background: linear-gradient(135deg, #0d0d2b, #1b0033); /* Dégradé sombre violet/bleu */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police principale */
+  color: #eee; /* Texte clair */
+  line-height: 1.6; /* Améliore la lisibilité du texte */
+}
+
+/* --------------------- */
+/* HEADER                */
+/* --------------------- */
+header {
+  display: flex;                 /* Organisation en flexbox */
+  justify-content: space-between; /* Titre à gauche / menu à droite */
+  align-items: center;           /* Aligne verticalement */
+  padding: 15px 40px;            /* Espacement interne */
+  background: rgba(0,0,0,0.8);   /* Fond sombre semi-transparent */
+  border-bottom: 2px solid #7b5cff; /* Ligne violette en bas */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4); /* Ombre portée */
+}
+
+header h1 {
+  font-size: 2em;                /* Taille du titre */
+  color: #fff;                   /* Couleur blanche */
+  text-shadow: 0 0 12px #7b5cff; /* Effet lumineux violet */
+}
+
+nav ul { 
+  display: flex; /* Menu en ligne */
+  gap: 25px;     /* Espacement entre les liens */
+  list-style: none; /* Supprime les puces */
+}
+
+nav a {
+  color: #ddd;           /* Couleur gris clair */
+  font-weight: bold;     /* Texte en gras */
+  text-decoration: none; /* Supprime le soulignement */
+  transition: all 0.3s ease; /* Animation fluide au survol */
+}
+nav a:hover {
+  color: #fff; /* Texte devient blanc */
+  text-shadow: 0 0 8px #7b5cff; /* Effet lumineux */
+}
+
+/* --------------------- */
+/* INTRO                 */
+/* --------------------- */
+.intro_projet {
+  background: rgba(30,30,60,0.85); /* Bloc violet sombre semi-transparent */
+  border-radius: 16px;             /* Coins arrondis */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6); /* Ombre profonde */
+  padding: 40px;                   /* Espacement interne */
+  margin: 40px auto;               /* Espace autour + centré */
+  max-width: 900px;                /* Largeur max */
+  text-align: center;              /* Texte centré */
+}
+
+.intro_projet h2 {
+  font-size: 2em;                  /* Gros sous-titre */
+  margin-bottom: 20px;             /* Espacement en bas */
+  color: #7b5cff;                  /* Violet clair */
+  text-shadow: 0 0 10px #7b5cff;   /* Effet lumineux */
+}
+
+/* --------------------- */
+/* GRID (Cartes infos)   */
+/* --------------------- */
+.grid {
+  display: grid;                                /* Mise en grille */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colonnes responsives */
+  gap: 20px;                                    /* Espacement entre cartes */
+  max-width: 1100px;                            /* Largeur max */
+  margin: 0 auto 50px;                          /* Centré + marge en bas */
+  padding: 20px;                                /* Espacement interne */
+}
+
+.card.futuristic {
+  background: rgba(20,20,40,0.9);               /* Fond violet sombre */
+  border: 2px solid #7b5cff;                    /* Bordure violette */
+  border-radius: 16px;                          /* Coins arrondis */
+  box-shadow: 0 0 20px rgba(123,92,255,0.4);    /* Effet néon violet */
+  padding: 25px;                                /* Espacement interne */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animations */
+}
+.card.futuristic:hover {
+  transform: translateY(-5px);                  /* Léger effet de levée */
+  box-shadow: 0 0 25px rgba(123,92,255,0.8);    /* Lumière plus forte */
+}
+.card h3 { 
+  color: #fff; 
+  margin-bottom: 15px; 
+}
+
+/* --------------------- */
+/* IMAGES (Galerie)      */
+/* --------------------- */
+.development { 
+  text-align: center; 
+  margin-bottom: 50px; 
+}
+.development h2 {
+  font-size: 2em;                 
+  margin-bottom: 25px;
+  color: #fff;                     /* Blanc */
+  text-shadow: 0 0 12px #7b5cff;   /* Effet lumineux violet */
+}
+
+.images {
+  display: grid;                               /* Grille pour images */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Colonnes adaptatives */
+  gap: 20px;                                   /* Espacement entre images */
+  max-width: 1100px;                           /* Largeur max */
+  margin: auto;                                /* Centré */
+}
+
+.img-card {
+  background: #111;                            /* Fond sombre */
+  border: 2px solid #7b5cff;                   /* Bordure violette */
+  border-radius: 12px;                         /* Coins arrondis */
+  box-shadow: 0 0 15px rgba(123,92,255,0.3);   /* Ombre violette */
+  padding: 10px;                               /* Espacement interne */
+  overflow: hidden;                            /* Cache le dépassement */
+  transition: transform 0.3s ease;             /* Animation fluide */
+}
+.img-card:hover { 
+  transform: scale(1.05); /* Zoom au survol */
+}
+.img-card img { 
+  width: 100%;            /* Image responsive */
+  border-radius: 8px;     /* Coins arrondis */
+}
+
+/* --------------------- */
+/* SECTION PLUS          */
+/* --------------------- */
+.plus {
+  text-align: center;                          /* Contenu centré */
+  margin: 40px auto;                           /* Espacement vertical + centré */
+  background: rgba(20,20,40,0.9);              /* Fond sombre violet */
+  padding: 30px;                               /* Espacement interne */
+  border-radius: 16px;                         /* Coins arrondis */
+  box-shadow: 0 0 20px rgba(123,92,255,0.4);   /* Effet lumineux */
+  max-width: 900px;                            /* Largeur max */
+}
+
+.plus h3 {
+  text-shadow: 0 0 20px rgba(123,92,255,0.4);  /* Effet lumineux */
+  margin-bottom: 15px; 
+}
+
+/* --------------------- */
+/* BOUTONS               */
+/* --------------------- */
+.btn-doc, .btn-play {
+  display: inline-block;                       /* Boutons en ligne */
+  margin-top: 20px;
+  padding: 12px 25px;                          /* Taille bouton */
+  background: #7b5cff;                         /* Violet */
+  color: white;                                /* Texte blanc */
+  border-radius: 30px;                         /* Boutons arrondis */
+  text-decoration: none;                       /* Pas de soulignement */
+  font-weight: bold;                           /* Texte gras */
+  transition: all 0.3s ease;                   /* Animation fluide */
+}
+.btn-doc:hover, .btn-play:hover {
+  background: #9a79ff;                         /* Violet plus clair */
+  box-shadow: 0 0 15px #7b5cff;                /* Effet lumineux */
+}
+
+/* --------------------- */
+/* BOUTONS NAVIGATION    */
+/* --------------------- */
+.next-project {
+  position: fixed;                             /* Fixé à l'écran */
+  bottom: 20px; right: 20px;                   /* En bas à droite */
+  padding: 12px 22px;
+  background: #7b5cff;                         /* Violet */
+  color: white;
+  border-radius: 30px;                         /* Bouton arrondi */
+  text-decoration: none;                       /* Pas de soulignement */
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);     /* Ombre */
+  transition: all 0.3s ease;
+}
+.next-project:hover {
+  background: #9a79ff;                         /* Couleur au survol */
+  transform: translateY(-3px);                 /* Effet de levée */
+}
+
+.prev-project {
+  position: fixed;                             /* Fixé à l'écran */
+  bottom: 20px; left: 20px;                    /* En bas à gauche */
+  padding: 12px 22px;
+  background: #7b5cff;                         /* Violet */
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+.prev-project:hover {
+  background: #9a79ff;
+  transform: translateY(-3px);
+}
+
+/* --------------------- */
+/* FOOTER                */
+/* --------------------- */
+footer {
+  background: rgba(0,0,0,0.85); /* Fond sombre */
+  color: #aaa;                  /* Texte gris clair */
+  text-align: center;           /* Texte centré */
+  padding: 20px;                /* Espacement interne */
+  margin-top: 50px;             /* Espace au-dessus */
+  border-top: 2px solid #7b5cff; /* Ligne violette */
+}
