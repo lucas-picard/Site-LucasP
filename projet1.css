@@ -18,6 +18,10 @@ body {
   line-height: 1.6;  /* Meilleure lisibilité */
 }
 
+body, a {
+  font-family: "Arial", sans-serif; /* remplacez par votre police */
+}
+
 /* Effet de voile sombre par-dessus le fond */
 body::before {
   content: "";
@@ -251,3 +255,4 @@ footer {
   from { opacity: 0; transform: translateY(20px); } /* Départ : bas + invisible */
   to   { opacity: 1; transform: translateY(0); }    /* Arrivée : visible en place */
 }
+
