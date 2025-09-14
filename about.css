@@ -4,6 +4,8 @@
 body {
     font-family: Arial, sans-serif; /* Police par défaut */
     background: linear-gradient(to bottom, #0a0a0a, #741d11); /* Dégradé sombre → rouge */
+    max-width: 100%;
+
 }
 
 body, a {
@@ -216,5 +218,6 @@ section:hover {
 .card:hover {
   transform: scale(1.05); /* Zoom au survol */
 }
+
 
 
