@@ -24,6 +24,10 @@ body {
   line-height: 1.6;
 }
 
+body, a {
+  font-family: "Arial", sans-serif; /* remplacez par votre police */
+}
+
 /* --------------------- */
 /* ANIMATION FADE-IN     */
 /* --------------------- */
@@ -227,3 +231,4 @@ footer {
   padding: 1em;
   font-size: 0.9em;
 }
+
