@@ -44,6 +44,16 @@ a {
 body {
     font-family: Arial, sans-serif; /* Police par défaut */
     background: linear-gradient(to right, #000000, #434343); /* Dégradé noir vers gris */
+    font-size: 16px;
+    margin: 20px;
+}
+
+/* Pour les écrans de 768px ou moins (tablettes et mobiles) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+    margin: 10px;
+  }
 }
 
 /* --- Style du pied de page --- */
@@ -71,3 +81,4 @@ footer {
   opacity: 1;                   /* Deviens visible */
   transform: translateY(0);     /* Revient à sa position normale */
 }
+
