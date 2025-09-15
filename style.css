@@ -9,14 +9,14 @@
 h1 {
     font-size: 5em;             /* Très grande taille de police */
     color: white;               /* Texte en blanc */
-    text-shadow: white 0 0 10%;/* Halo lumineux autour du texte */
+    text-shadow: white 0 0 10px;/* Halo lumineux autour du texte */
     text-align: center;         /* Centré horizontalement */
 }
 
 /* --- Style des boutons --- */
 .btn {
     font-size: 2em;             /* Texte assez grand */
-    padding: 0,5em 1em;         /* Espacement interne */
+    padding: 0.5em 1em;         /* Espacement interne */
     margin-top: 1em;            /* Espace au-dessus de chaque bouton */
     cursor: pointer;            /* Curseur main au survol */
     background-color: black;    /* Fond noir */
@@ -44,20 +44,6 @@ a {
 body {
     font-family: Arial, sans-serif; /* Police par défaut */
     background: linear-gradient(to right, #000000, #434343); /* Dégradé noir vers gris */
-    font-size: 16px;
-    margin: 20px;
-}
-
-body, a {
-    font-family: "Arial", sans-serif; /* remplacez par votre police */
-}
-
-/* Pour les écrans de 768px ou moins (tablettes et mobiles) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-        margin: 10px;
-    }
 }
 
 /* --- Style du pied de page --- */
@@ -75,14 +61,13 @@ footer {
 
 /* --- Animation fade-in (apparition progressive) --- */
 .fade-in {
-    opacity: 0;                   /* Commence invisible */
-    transform: translateY(20px);  /* Décalé vers le bas */
-    transition: opacity 1.2s ease, transform 1.2s ease; /* Animation fluide */
+  opacity: 0;                   /* Commence invisible */
+  transform: translateY(20px);  /* Décalé vers le bas */
+  transition: opacity 1.2s ease, transform 1.2s ease; /* Animation fluide */
 }
 
 /* --- Quand la classe "show" est ajoutée, l'élément devient visible --- */
 .fade-in.show {
-    opacity: 1;                   /* Deviens visible */
-    transform: translateY(0);     /* Revient à sa position normale */
+  opacity: 1;                   /* Deviens visible */
+  transform: translateY(0);     /* Revient à sa position normale */
 }
-
