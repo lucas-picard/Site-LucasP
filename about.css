@@ -1,13 +1,4 @@
-/* --- Corps de page --- */
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0a0a0a, #741d11);
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-}
-
-/* --- Header --- */
+/* --- Header global --- */
 header {
     display: flex;
     flex-direction: column; /* Colonne sur mobile */
@@ -20,6 +11,7 @@ header h1 {
     font-size: 6vw; /* Taille adaptative */
     color: white;
     text-align: center;
+    margin: 10px 0;
 }
 
 /* --- Navigation --- */
@@ -48,9 +40,9 @@ nav ul {
     box-shadow: 0 0 10px white;
 }
 
-/* --- Sections --- */
+/* --- Sections principales --- */
 section {
-    max-width: 90%;        /* Largeur flexible */
+    max-width: 90%;
     margin: 40px auto;
     padding: 20px;
     background-color: white;
@@ -58,16 +50,7 @@ section {
     border-radius: 10px;
 }
 
-/* --- Barres de compétences --- */
-.bar {
-    width: 100%;
-    height: 12px;
-    background: #ddd;
-    border-radius: 8px;
-    margin-bottom: 12px;
-}
-
-/* --- Activités --- */
+/* --- Grid activités --- */
 .grid-activites {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -76,8 +59,7 @@ section {
 
 /* --- Footer --- */
 footer {
-    position: relative; /* Fixé sur mobile peut gêner */
-    bottom: 0;
+    position: relative; /* Pour éviter de cacher le contenu sur mobile */
     width: 100%;
     background-color: #222;
     color: white;
