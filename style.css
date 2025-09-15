@@ -15,13 +15,13 @@ h1 {
 
 /* --- Style des boutons --- */
 .btn {
-    font-size: 200%;             /* Texte assez grand */
-    padding: 50% 100%;         /* Espacement interne */
-    margin-top: 100%;            /* Espace au-dessus de chaque bouton */
+    font-size: 2em;             /* Texte assez grand */
+    padding: 0,5em 1em;         /* Espacement interne */
+    margin-top: 1em;            /* Espace au-dessus de chaque bouton */
     cursor: pointer;            /* Curseur main au survol */
     background-color: black;    /* Fond noir */
     color: #111111;             /* Texte gris très foncé */
-    border-radius: 31.25%;         /* Coins légèrement arrondis */
+    border-radius: 5px;         /* Coins légèrement arrondis */
     list-style-type: none;      /* Supprime les puces si utilisé dans une liste */
 }
 
