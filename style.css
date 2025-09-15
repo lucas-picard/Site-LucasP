@@ -5,6 +5,10 @@
     align-items: center;        /* Centre horizontalement */
 }
 
+body{
+    max-with:100%;
+}
+
 /* --- Style du titre principal h1 --- */
 h1 {
     font-size: 5em;             /* Très grande taille de police */
@@ -71,3 +75,4 @@ footer {
   opacity: 1;                   /* Deviens visible */
   transform: translateY(0);     /* Revient à sa position normale */
 }
+
