@@ -1,83 +1,208 @@
-/* --- Header global --- */
+/* --------------------- */
+/* BODY GLOBAL           */
+/* --------------------- */
+body {
+    font-family: Arial, sans-serif; /* Police par défaut */
+    background: linear-gradient(to bottom, #0a0a0a, #741d11); /* Dégradé sombre → rouge */
+}
+  
+/* --------------------- */
+/* TITRES H1             */
+/* --------------------- */
+h1 {
+    font-size: 2.5em;               /* Grande taille */
+    color: white;                   /* Texte blanc */
+    text-shadow: white 0 0 10px;    /* Lueur blanche */
+    text-align: center;             /* Centré */
+}
+
+/* --------------------- */
+/* FOOTER                */
+/* --------------------- */
+footer {
+    position: fixed;        /* Collé en bas de la page */
+    bottom: 0;
+    width: 100%;            /* Occupe toute la largeur */
+    background-color: #222; /* Fond sombre */
+    color: white;           /* Texte blanc */
+    text-align: center;     /* Centré */
+    padding: 1em;           /* Espacement interne */
+    font-size: 0.9em;       /* Taille réduite */
+    margin-left: -8px;      /* Correction du margin body */
+}
+
+/* --------------------- */
+/* HEADER                */
+/* --------------------- */
 header {
-    display: flex;
-    flex-direction: column; /* Colonne sur mobile */
-    align-items: center;
+    display: flex;                          /* Flexbox pour aligner */
+    justify-content: space-between;         /* Espace entre titre et menu */
+    align-items: center;                    /* Alignement vertical */
     padding: 10px 20px;
-    background: linear-gradient(to right, #000000, #434343);
+    margin: -8px;                           /* Supprime marge body */
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #434343); /* Dégradé noir/gris */
 }
 
-header h1 {
-    font-size: 6vw; /* Taille adaptative */
-    color: white;
-    text-align: center;
-    margin: 10px 0;
-}
-
-/* --- Navigation --- */
+/* --------------------- */
+/* MENU NAVIGATION       */
+/* --------------------- */
 nav ul {
-    display: flex;
-    flex-wrap: wrap; /* Passe à la ligne si trop petit */
-    justify-content: center;
-    padding: 0;
-    margin: 10px 0;
+    display: flex; /* Les <li> en ligne */
 }
 
 .btn {
     font-weight: bold;
     font-size: 1em;
+    text-decoration: none;
     padding: 10px 15px;
-    margin: 5px;
-    list-style: none;
-    background-color: black;
+    margin-left: 20px;
+    list-style-type: none; /* Pas de puce */
+}
+
+a {
     color: white;
-    border-radius: 5px;
-    text-align: center;
+    font-family: Satisfy, cursive;  /* Police manuscrite */
+    text-decoration: none;          /* Pas de soulignement */
 }
 
-.btn:hover {
-    background-color: #333;
-    box-shadow: 0 0 10px white;
+a:hover {
+    text-decoration: underline;     /* Soulignement au survol */
+    color: lightgray;               /* Couleur claire */
+    text-shadow: whitesmoke 0 0 10px; /* Lueur */
 }
 
-/* --- Sections principales --- */
+/* --------------------- */
+/* SECTIONS PRINCIPALES  */
+/* --------------------- */
 section {
-    max-width: 90%;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    border-radius: 10px;
+    max-width: 950px;                     /* Largeur limitée */
+    margin: 60px auto;                    /* Centré avec marge verticale */
+    padding: 25px;
+    background-color: white;              /* Fond blanc */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    border-radius: 10px;                  /* Coins arrondis */
 }
 
-/* --- Grid activités --- */
-.grid-activites {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
+section:hover {
+    box-shadow: white 0 0 10px;           /* Lueur blanche au survol */
 }
 
-/* --- Footer --- */
-footer {
-    position: relative; /* Pour éviter de cacher le contenu sur mobile */
-    width: 100%;
-    background-color: #222;
+/* --------------------- */
+/* SECTION PLUS          */
+/* --------------------- */
+.plus {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #000000, #434343); /* Dégradé noir/gris */
+    margin-bottom: 150px; /* Laisse de l’espace au-dessus du footer */
+}
+
+.plus h2 {
     color: white;
+    text-shadow: white 0 0 10px;  /* Lueur blanche */
     text-align: center;
-    padding: 1em;
-    font-size: 0.9em;
 }
 
-/* --- Media Queries --- */
-@media (max-width: 768px) {
-    header { flex-direction: column; }
-    nav ul { flex-direction: column; }
-    .btn { width: 80%; margin: 5px 0; font-size: 1.2em; }
-    section { padding: 15px; margin: 20px auto; }
-    h1 { font-size: 8vw; }
+/* --------------------- */
+/* BOUTONS (blank)       */
+/* --------------------- */
+.blank {
+    text-decoration: none;
+    list-style-type: none; 
+    display: inline-block;
+    background: white;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: var(--card-radius); /* Variable CSS */
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
-@media (max-width: 480px) {
-    .grid-activites { grid-template-columns: 1fr; }
-    .card { font-size: 0.9em; padding: 10px; }
+.blank:hover {
+    background-color: #333;
+    color: white;
+    box-shadow: 0 0 10px white;
+    text-shadow: whitesmoke 0 0 10px;
+}
+
+.blank2 {
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.btn3 {
+    text-align: center;
+    padding: 20px;
+}
+ 
+/* --------------------- */
+/* BARRES DE COMPÉTENCES */
+/* --------------------- */
+.bar {
+  width: 100%;              /* Largeur max */
+  height: 12px;             /* Hauteur fine */
+  background: #ddd;         /* Fond gris clair */
+  border-radius: 8px;       /* Coins arrondis */
+  overflow: hidden;         /* Cache le débordement */
+  margin-bottom: 12px;      /* Espace entre barres */
+}
+
+.progress {
+  width: 0; /* Par défaut vide */
+  height: 100%;
+  background: linear-gradient(to right, #611910, #ff6347); /* Dégradé rouge/orange */
+  border-radius: 8px;
+}
+
+/* Animation d’agrandissement */
+@keyframes fill {
+  from { width: 0; }
+  to   { width: var(--target-width); }
+}
+
+/* Valeurs spécifiques par techno */
+.progress.html {
+  --target-width: 35%;
+  animation: fill 1.5s ease forwards;
+}
+.progress.css {
+  --target-width: 25%;
+  animation: fill 1.5s ease forwards;
+}
+.progress.js {
+  --target-width: 15%;
+  animation: fill 1.5s ease forwards;
+}
+.progress.python {
+  --target-width: 45%;
+  animation: fill 1.5s ease forwards;
+}
+.progress.Cplus {
+  --target-width: 5%;
+  animation: fill 1.5s ease forwards;
+}
+.progress.Csharp {
+  --target-width: 15%;
+  animation: fill 1.5s ease forwards;
+}
+
+/* --------------------- */
+/* ACTIVITÉS PERSO       */
+/* --------------------- */
+.activites {
+  background: #ffffff; /* Fond blanc */
+}
+
+.card {
+  background: #f0f0f0; /* Gris clair */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1); /* Ombre discrète */
+  text-align: center;
+  transition: transform 0.3s; /* Animation */
+}
+.card:hover {
+  transform: scale(1.05); /* Zoom au survol */
 }
