@@ -1,13 +1,13 @@
 # 🌐 Mon premier site portfolio
 
-## 🧠 À propos
+##  À propos
 
 Voici mon premier site internet de type portfolio.  
 Je l’ai réalisé lorsque je débutais tout juste dans le monde passionnant de la programmation.
 
 Juste après avoir terminé mon premier cours en HTML, CSS et JavaScript, j’étais pressé de mettre en pratique les connaissances que j’avais acquises.
 
-## 🎯 Objectif du projet
+##  Objectif du projet
 
 Ce site avait pour but de :
 
@@ -20,7 +20,7 @@ Ce site avait pour but de :
 Ce site ne représente pas réellement mon talent ni ma motivation actuelle.  
 Il s’agit d’un projet de débutant, réalisé dans une phase d’apprentissage.
 
-## 🚧 Évolution
+##  Évolution
 
 Ce portfolio est donc temporaire, en attendant la création de mon véritable portfolio, qui sera bien plus représentatif de mes capacités.
 
