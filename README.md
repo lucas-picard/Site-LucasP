@@ -8,7 +8,7 @@ Je l’ai réalisé lorsque je débutais tout juste dans le monde passionnant de
 Juste après avoir terminé mon premier cours en HTML, CSS et JavaScript, j’étais pressé de mettre en pratique les connaissances que j’avais acquises.
 
 ##  Objectif du projet
-azert
+azer
 Ce site avait pour but de :
 
 - Mettre en pratique mes premières compétences  
