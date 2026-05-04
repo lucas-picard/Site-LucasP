@@ -4,7 +4,6 @@
 
 Voici mon premier site internet de type portfolio.  
 Je l’ai réalisé lorsque je débutais tout juste dans le monde passionnant de la programmation.
-
 Juste après avoir terminé mon premier cours en HTML, CSS et JavaScript, j’étais pressé de mettre en pratique les connaissances que j’avais acquises.
 
 ##  Objectif du projet
