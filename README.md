@@ -15,7 +15,7 @@ Ce site avait pour but de :
 - Découvrir la structure d’un site web  
 
 ##  Limites
-aa
+a
 Ce site ne représente pas réellement mon talent ni ma motivation actuelle.  
 Il s’agit d’un projet de débutant, réalisé dans une phase d’apprentissage.
 
